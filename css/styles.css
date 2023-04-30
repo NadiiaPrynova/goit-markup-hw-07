@@ -475,7 +475,7 @@ address {
   .mobile-soc-list {
     display: flex;
 
-    gap: 56px;
+    gap: 35px;
   }
 
   .mobile-menu-close-btn {
@@ -513,7 +513,7 @@ address {
     padding-bottom: 112px;
 
     height: 432px;
-    width: 428px;
+    max-width: 428px;
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(
@@ -760,7 +760,11 @@ address {
     overflow: scroll;
   }
 }
-
+@media screen and (min-width: 428px) {
+  .mobile-soc-list {
+    gap: 56px;
+  }
+}
 /****** ------------Tablet-------- ******/
 
 @media screen and (min-width: 768px) {
