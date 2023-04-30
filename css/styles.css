@@ -119,7 +119,7 @@ address {
 }
 
 /*------------ Portfolio----------- */
-.portfolio {
+/* .portfolio {
   padding-top: 96px;
 }
 .portfolio .content {
@@ -194,7 +194,7 @@ address {
   justify-content: center;
   align-items: center;
   margin-bottom: 72px;
-}
+} */
 
 /* -------Modal----------- */
 .backdrop {
@@ -251,7 +251,6 @@ address {
   font-weight: 500;
   line-height: 1.5;
   text-align: center;
-  /* margin-top: 48px; */
   margin-bottom: 16px;
 }
 .modal-field {
@@ -669,6 +668,85 @@ address {
     background-color: var(--pressed-state-color);
   }
 
+  /*------------ Portfolio----------- */
+  .portfolio {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .portfolio .content {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+    border: 1px solid var(--border-color);
+    border-top: none;
+    text-align: left;
+  }
+
+  .project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+  .project-item {
+    max-width: 396px;
+  }
+  .project-card-wrap {
+    position: relative;
+    overflow: hidden;
+  }
+  .project-link {
+    display: block;
+    transition: box-shadow var(--transformation);
+  }
+  .project-link:hover,
+  .project-link:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  }
+  .project-card-text {
+    position: absolute;
+    top: 0;
+    line-height: 1.5;
+    color: var(--light-mode-color);
+    background-color: var(--primary-brand-color);
+    padding: 40px 32px 40px 32px;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform var(--transformation);
+  }
+
+  .project-link:hover .project-card-text,
+  .project-link:focus .project-card-text {
+    transform: translate(0);
+  }
+  .project-title {
+    margin-bottom: 8px;
+  }
+  .project-description {
+    color: var(--main-text-color);
+  }
+
+  .btn-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 24px;
+    align-items: center;
+    margin-bottom: 48px;
+  }
+
+  .filter-button {
+    color: var(--primary-brand-color);
+    background-color: var(--light-mode-color);
+    padding: 8px 16px;
+    border: 1px solid #e7e9fc;
+  }
+  .filter-button:hover,
+  .filter-button:focus {
+    color: var(--white-color);
+    background-color: var(--pressed-state-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+
   /* ----------Footer------------- */
 
   .footer {
@@ -870,7 +948,6 @@ address {
     background-color: var(--dark-text-bcg-color);
     text-align: center;
     padding-top: 112px;
-    /* padding-bottom: 240px; */
     height: 436px;
     width: 100%;
     margin-left: auto;
@@ -1028,6 +1105,84 @@ address {
     background-color: var(--pressed-state-color);
   }
 
+  /* ---------Portfolio--------- */
+  .portfolio {
+    padding-top: 64px;
+  }
+  .portfolio .content {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+    border: 1px solid var(--border-color);
+    border-top: none;
+    text-align: left;
+  }
+
+  .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+  .project-item {
+    width: calc((100% - 24px) / 2);
+  }
+  .project-card-wrap {
+    position: relative;
+    overflow: hidden;
+  }
+  .project-link {
+    display: block;
+    transition: box-shadow var(--transformation);
+  }
+  .project-link:hover,
+  .project-link:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  }
+  .project-card-text {
+    position: absolute;
+    top: 0;
+    line-height: 1.5;
+    color: var(--light-mode-color);
+    background-color: var(--primary-brand-color);
+    padding: 40px 32px 40px 32px;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform var(--transformation);
+  }
+
+  .project-link:hover .project-card-text,
+  .project-link:focus .project-card-text {
+    transform: translate(0);
+  }
+  .project-title {
+    margin-bottom: 8px;
+  }
+  .project-description {
+    color: var(--main-text-color);
+  }
+  .btn-list {
+    display: flex;
+    gap: 24px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 64px;
+  }
+
+  .filter-button {
+    color: var(--primary-brand-color);
+    background-color: var(--light-mode-color);
+    padding: 12px 24px;
+    border: 1px solid #e7e9fc;
+  }
+  .filter-button:hover,
+  .filter-button:focus {
+    color: var(--white-color);
+    background-color: var(--pressed-state-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+
   /* ----------Footer------------- */
 
   .footer {
@@ -1126,7 +1281,7 @@ address {
   .icon-wrap {
     display: none;
   }
-  /*What are we doing */
+  /*-------What are we doing----- */
 
   .section.work {
     display: none;
@@ -1202,6 +1357,21 @@ address {
     width: calc((100% -48px) / 3);
   }
   .work-photo {
+  }
+
+  /* -----------Portfolio------- */
+
+  .portfolio {
+    padding-top: 64px;
+  }
+  .btn-list {
+    margin-bottom: 72px;
+  }
+  .project-list {
+    gap: 48px 24px;
+  }
+  .project-item {
+    width: calc((100% - 48px) / 3);
   }
   /* -----------Footer-------- */
 
